@@ -41,6 +41,13 @@ public:
         double Speed1 = speedrange(gen);
         double Fuel1 = fuelrange(gen);
         double Temp1 = temprange(gen);
+        if(Fuel1<10){
+            cout<<"Warning Fuel Less Than 10% ";
+        }
+        else if(Temp1>100){
+            cout<<"Warning Engine Temperature Greater than 100 ";
+            
+        }
 
      
         update(Speed1, Fuel1, Temp1);
